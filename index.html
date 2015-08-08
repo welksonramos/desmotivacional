@@ -1,1 +1,74 @@
-Hello world
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src=’http://code.responsivevoice.org/responsivevoice.js’></script>
+    <script>
+        var phrases = [
+            "As pessoas só te incentivam para rir do seu fracasso.",
+            "Seus sonhos nunca se realizarão.",
+            "Ele só te comeu por falta de opção",
+            "Ela não é dificil, você que é feio",
+            "Ela saiu com você para comer de graça",
+            "As vezes a vida te levanta \nsó pra você cair de novo.",
+            "Você é um erro",
+            "Para de bater punheta pra desenho",
+            "Para de tentar criar polêmica pra chamar atenção.\n Todo mundo te acha um bosta.",
+            "Pra ser inútil \nvocê tem que melhorar muito.",
+            "Você é um desperdício de \nesperma.",
+            "Qualquer companhia \né melhor que a sua.",
+            "Sua sombra só te segue\nporque é obrigada",
+            "Azar no amor\nAzar no dinheiro\n e sorte no azar"
+          ]
+    </script>
+    <script>
+        var getCanvas = function() {
+            var width = screen.width;
+            var height = screen.height;
+
+            return width + "/" + height + "?random";
+        }
+
+        var setCanvasStyle = function() {
+            var url =  "https://unsplash.it/" + getCanvas();
+            console.log(url);
+            document.getElementById("canvas").src = url;
+            setText();
+        }
+
+        var setText = function() {
+            var element = document.getElementById("text");
+            var phrase = phrases[Math.floor(Math.random()*phrases.length)];
+            element.innerHTML = phrase;
+            responsiveVoice.speak(phrase);
+        }
+    </script>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding: 0
+        }
+
+        #text {
+            z-index: 100;
+            position: absolute;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            left: 150px;
+            top: 350px;
+        }
+    </style>
+
+</head>
+<body onload="setCanvasStyle();" style="background-color: black">
+<div class="image">
+    <img id="canvas"></img>
+    <p id="text">
+    </p>
+</div>
+
+</body>
+
+</html>
+
