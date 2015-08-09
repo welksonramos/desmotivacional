@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    background-size: cover;
+}
+
+#text {
+    z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    left: 150px;
+    top: 350px;
+}
+
+
+.overlay {
+    display: block;
+    position: absolute;
+    background-color: rgba(138, 108, 108, 0.3);
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+}
