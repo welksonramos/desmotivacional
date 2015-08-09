@@ -9,14 +9,12 @@ body {
     z-index: 100;
     position: absolute;
     color: white;
-    font-size: 24px;
-    font-weight: bold;
     left: 150px;
-    top: 350px;
-    font-size: 32px;
+    top: 25%;
+    font-size: 4em;
     font-weight: 900;
+    margin-right: 150px;
 }
-
 
 .overlay {
     display: block;
@@ -26,4 +24,25 @@ body {
     left: 0px;
     width: 0px;
     height: 0px;
+    padding: 0;
+}
+
+.image {
+    padding: 0;
+}
+
+#footer {
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin-top: -3em;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
 }
