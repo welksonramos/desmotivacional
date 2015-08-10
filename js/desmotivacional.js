@@ -34,7 +34,16 @@ var phrases = [
     "Ninguém acha graça </br>no que você diz.",
     "Vai dar merda.",
     "Mais um dia que passa </br>e dua insignificância prevalece.",
-    "Ela gosta do seu melhor amigo."
+    "Ela gosta do seu melhor amigo.",
+    "Nunca diga que sua vida não pode ficar pior",
+    "A inteligência artificial não é páreo para a estupidez natural!",
+    "Faça um bom uso do objeto cilíndrico que você deve ter, sob a sua mesa!",
+    "Se você não conseguir de primeira, remova todas as evidências de que você ao menos tentou!",
+    "Finalmente ela olhou pra você. E te achou feio.",
+    "Aquela festa parece legal... Ninguém te convidou.",
+    "Uma mulher te cantou...era um travesti.",
+    "Sua cara metade virou gay!",
+    "Ele ainda se lembra de você. Com raiva!"
 ];
 
 var setOverlay = function() {
