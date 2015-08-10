@@ -19,7 +19,30 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body onload="setCanvasStyle();">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.4&appId=384085541705339";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <a href="https://github.com/flaviotruzzi/desmotivacional"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+
+<div id="header">
+  <div style="width:85px; height:20px; float:left">
+    <!-- Twitter -->
+    <a href="https://twitter.com/share" class="twitter-share-button" data-text="Frases para começar bem o seu dia" data-hashtags="foda-se">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  </div>
+  <div style="float:left; height:20px;">
+      <!-- Facebook -->
+      <div class="fb-like" data-href="http://flaviotruzzi.github.io/desmotivacional/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" style="border:none; height:20px;"></div>    
+  </div>
+</div>
+
 <div id="overlay" class="overlay"></div>
 <div class="image">
     <img src="" id="canvas" onload="setOverlay()">

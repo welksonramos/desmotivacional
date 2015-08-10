@@ -31,6 +31,13 @@ body {
     padding: 0;
 }
 
+#header {
+    position: absolute;
+    z-index: 10;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
 #footer {
     clear: both;
     position: relative;
