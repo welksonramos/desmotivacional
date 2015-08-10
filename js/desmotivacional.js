@@ -29,7 +29,12 @@ var phrases = [
     "Nasceu para ser feito de otário.",
     "Agradeça seu pai por ele te amar</br> mesmo você sendo um merda.",
     "Comer que nem um filho da puta</br> não vai esconder o fracasso da sua vida.",
-    "Seja feliz. A base de remédios."
+    "Você nunca vai conseguir.",
+    "Calma, </br> o pior ainda está por vir.",
+    "Ninguém acha graça </br>no que você diz.",
+    "Vai dar merda.",
+    "Mais um dia que passa </br>e dua insignificância prevalece.",
+    "Ela gosta do seu melhor amigo."
 ];
 
 var setOverlay = function() {
